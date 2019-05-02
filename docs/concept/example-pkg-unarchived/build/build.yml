@@ -1,0 +1,12 @@
+environment:
+  container:
+    enable: true
+    image:
+      ubuntu: "=18.04"
+  variables:
+    MAKE_THREADS: ${xpk.getBuildEnvironment().getBuildMaxThreads()}
+script:
+  build: `bash ./build.sh`
+dist:
+  binary:
+    - ./example-pkg-binary

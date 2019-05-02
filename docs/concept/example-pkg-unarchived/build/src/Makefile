@@ -1,0 +1,1 @@
+gcc -o ./example-pkg-binary ./fake.c

@@ -1,0 +1,13 @@
+name: example-pkg
+description: Just for demo use.
+type: service
+author:
+  - name: testAuthor
+    email: test-author@xpkhq.top
+dependencies:
+  build:
+    xpk: ">=0.1.0"
+  runtime:
+    _fakepkg_: "*"
+  service:
+    _fakesrv_: "*"
